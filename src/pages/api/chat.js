@@ -1,5 +1,11 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import axios from 'axios';
+const express = require('express')
+const cors = require('cors')
+const app = express()
+app.use(express.json())
+app.use(cors())
+
 
 export default async function handler(req, res) {
   const referer = req.headers.referer || req.headers.referrer; // get the referer from the request headers
