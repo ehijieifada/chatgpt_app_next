@@ -71,7 +71,7 @@ export default function Home() {
             {
               isLoading &&
               <div key={chatLog.length} className="flex justify-start">
-                  <div className="  p-4 text-white max-w-sm">
+                  <div className="  p-2 text-white max-w-sm">
                     <TypingAnimation />
                   </div>
               </div>
@@ -79,9 +79,9 @@ export default function Home() {
       </div>
         </div> 
         <form onSubmit={handleSubmit} className=" flex justify-center p-6">
-          <div className="w-1/2 px-2  bg-gray-900" id="form">  
-        <input type="text" className=" flex-grow  py-2 bg-transparent text-white focus:outline-none" placeholder="Type your message " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-            <button type="submit" className=" bg-orange-500  py-3 px-4 justify-end float-right text-white font-semibold focus:outline-none hover:bg-gray-900 transition-colors duration-300">Send</button>
+          <div className=" px-2" id="form">  
+        <input type="text" className="flex-grow  py-2 " id="input" placeholder=" Type your message " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
+            <button type="submit" className=" bg-orange-500  py-3 px-4 float-right text-white font-semibold focus:outline-none hover:bg-gray-900 transition-colors duration-300">Send</button>
             </div>
         </form>
         </div>
