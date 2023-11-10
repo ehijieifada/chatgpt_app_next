@@ -23,11 +23,12 @@ export default function Home() {
   }
 
   const sendMessage = (message) => {
-    const url = 'https://api.openai.com/v1/chat/completions';
-    
+    const url = 'https://api.openai.com/v1/chat/completions'   
     const headers = {
+      'Access-Control-Allow-Origin': '*',
       'Content-type': 'application/json',
       'Authorization': `Bearer ${process.env.NEXT_PUBLIC_OPENAI_API_KEY}`
+      
     };
 
     const data = {
