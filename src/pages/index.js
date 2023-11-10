@@ -81,7 +81,7 @@ export default function Home() {
         <form onSubmit={handleSubmit} className=" flex justify-center p-6">
           <div className=" px-2" id="form">  
         <input type="text" className="flex-grow  py-2 " id="input" placeholder=" Type your message " value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-            <button type="submit" className=" bg-orange-500  py-3 px-4 float-right text-white font-semibold focus:outline-none hover:bg-gray-900 transition-colors duration-300">Send</button>
+            <button type="submit" className=" bg-orange-500  py-3 px-4 float-right text-white font-semibold focus:outline-none hover:bg-gray-900">Send</button>
             </div>
         </form>
         </div>
